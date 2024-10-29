@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="#">Menú</a></li>
+            <li><a href="#">Reservar</a></li>
+            <li><a href="#">Reseñas</a></li>
+        </ul>
+
+
+
+    </nav>
+            <header></header>
+            <section class="body">
+                <aside class="izq"></aside>
+                <aside class="der">
+                    <section class="cubo"></section>
+                    <section class="cubo"></section>
+                    <section class="cubo"></section>
+                </aside>
+            </section>
+            <footer></footer>
+    
+
+            <script>//script que hace que pueda mostrarse con click
+                const hamburger = document.getElementById('hamburger');
+                const menu = document.getElementById('menu');
+        
+                hamburger.addEventListener('click', () => {
+                    menu.classList.toggle('show');
+                });
+            </script>
+</body>
+</html>
